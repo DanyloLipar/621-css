@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+:root {
+    font-family: 'Dotgothic16', sans-serif;
+    --main-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header .logo {
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: aquamarine;
+}
+
+img {
+    display: block;
+    max-width: 250px;
+}
+
+header nav .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav menu .a {
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding: 0px 5px;
+}
+
+:hover {
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+
+    header nav div .container {
+        display: flex;
+    }
+
+    header nav .menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+}
+
+header .banner-container {
+    background-image: url(../img/baby-yoda.svg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -ms-flex-item-align: center;
+}
+
+.logo {
+    padding-top: 50px;
+    text-align: center;
+}
